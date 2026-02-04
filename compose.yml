@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - 5173:5173
+    volumes:
+      - ./2323code:/app
+    stdin_open: true
+    tty: true
+    working_dir: /app/
