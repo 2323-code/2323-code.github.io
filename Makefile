@@ -13,3 +13,7 @@ ps:
 
 bash:
 	@docker compose exec app bash
+
+restart:
+	@make down
+	@make up
