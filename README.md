@@ -17,7 +17,7 @@ npm run dev
 ブラウザで `http://localhost:5173` にアクセスすると、アプリケーションが表示されます。
 
 ### ポートが競合する場合
-もしポート `5173` が他のプロセスで使用されている場合、`compose.yml` ファイル内のポート設定と、`vite.config.js` のポート設定を変更してください。
+もしポート `5173` が他のプロセスで使用されている場合、`compose.yml` ファイル内のポート設定と、`vite.config.ts` のポート設定を変更してください。
 
 例：
 
@@ -28,7 +28,7 @@ ports:
 ```
 
 ```ts
-// vite.config.js
+// vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
